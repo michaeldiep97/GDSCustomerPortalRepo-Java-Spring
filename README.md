@@ -20,22 +20,22 @@ I've also made a few demo java controllers and corresponding html templates. The
 
 ## TODO
 
-determine database set-up
-simulate login
-translate prototype java classes into code
-implement item search
-implement cart
-implement mock checkout
+determine database set-up,
+simulate login,
+translate prototype java classes into code,
+implement item search,
+implement cart,
+implement mock checkout,
 
 ## Configuration
 
 ## How to run
 
 You will need:
-	Eclipse Oxygen
-	Spring Tool Suite 
-	Apache Tomcat servelett (just the binaries)
-	Maven (just the binaries)
+	Eclipse Oxygen,
+	Spring Tool Suite, 
+	Apache Tomcat servelett (just the binaries),
+	Maven (just the binaries),
 	
 To install STS, open Eclipse, click Help > Eclipse Marketplace and search for Spring tool suite.
 	

@@ -20,7 +20,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin: 0 -16px;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .col-25 {
@@ -103,11 +104,14 @@ span.price {
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .col-25 {
     margin-bottom: 20px;
   }
 }
+
 </style>
 </head>
 <body>
@@ -115,7 +119,7 @@ span.price {
 	<iframe src="./navbar.html" frameborder="0"></iframe>
 
 
-<h2>Checkout</h2>
+<center><h2>Checkout</h2></center>
 <p></p>
 <div class="row">
   <div class="col-75">

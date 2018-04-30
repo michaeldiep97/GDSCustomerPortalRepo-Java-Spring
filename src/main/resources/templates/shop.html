@@ -44,6 +44,40 @@ form.example::after {
     clear: both;
     display: table;
 }
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin: 0 auto;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
 </style>
 </head>
 <body>
@@ -54,10 +88,40 @@ form.example::after {
 	<!-- Shop Header -->
 	<center><h1>Web Shop</h1></center>
 
-<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-  <input type="text" placeholder="Search.." name="search2">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Categories..." title="Type in a category">
+
+<ul id="myUL">
+  <li><a href="#">Audio</a></li>
+  <li><a href="#">Cameras & Camcorders</a></li>
+
+  <li><a href="#">Cell Phones</a></li>
+  <li><a href="#">Computers & Tablets</a></li>
+
+  <li><a href="#">Movies & Music</a></li>
+  <li><a href="#">TV & Home Theater</a></li>
+  <li><a href="#">Video Games</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
 
 </body>
 </html> 

@@ -78,11 +78,8 @@ span.psw {
 
 <center><h2>Login Form</h2></center>
 
-<form style="max-width: 500px" action="/action_page.php">
-  <!-- <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div> -->
-  <div class="container">
+<!-- <form style="max-width: 500px"> -->
+  <div class="container" style="border:3px solid #f1f1f1;margin: 0 auto">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -95,11 +92,13 @@ span.psw {
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+  <div class="container" style="background-color:#f1f1f1;margin: 0 auto; border:3px solid #f1f1f1">
+    <form action="/">
+    	<input type="submit" value="Cancel" class="cancelbtn" formnovalidate>
+    	<span class="psw"><a href="/registrationForm">Create Account</a></span>
+    </form>
   </div>
-</form>
+<!-- </form> -->
 
 </body>
 </html>

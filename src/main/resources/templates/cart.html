@@ -19,10 +19,11 @@
 	
 	<!-- Cart Buttons -->
 	<center>
-		<button>Continue Shopping</button> 
-		<button>Edit Cart</button>
-		<button>Checkout</button>
+		<form action="${pageContext.request.contextPath}/dispatcherServlet" method="post">
+    		<input type="submit" name="Continue Shopping" value="Continue Shopping" />
+    		<input type="submit" name="Edit Cart" value="Edit Cart" />
+    		<input type="submit" name="Checkout" value="Checkout" />
+		</form>
 	</center>
-	
 </body>
 </html>

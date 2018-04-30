@@ -1,5 +1,5 @@
-startup\GreetingController.class
-startup\LoginController.class
-startup\CartController.class
-startup\HelloController.class
-startup\Application.class
+startup/CartController.class
+startup/HelloController.class
+startup/LoginController.class
+startup/Application.class
+startup/GreetingController.class

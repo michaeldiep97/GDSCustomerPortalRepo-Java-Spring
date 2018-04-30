@@ -19,10 +19,14 @@
 	
 	<!-- Cart Buttons -->
 	<center>
-		<form action="${pageContext.request.contextPath}/dispatcherServlet" method="post">
-    		<input type="submit" name="Continue Shopping" value="Continue Shopping" />
-    		<input type="submit" name="Edit Cart" value="Edit Cart" />
-    		<input type="submit" name="Checkout" value="Checkout" />
+		<form action="http://localhost:8080">
+    		<input type="submit" value="Continue Shopping"/>
+    	</form>
+    	<form action="/editTest">
+    		<input type="submit" value="Edit Cart"/>
+    	</form>
+    	<form action="/checkout">
+    		<input type="submit" value="Checkout"/>
 		</form>
 	</center>
 </body>

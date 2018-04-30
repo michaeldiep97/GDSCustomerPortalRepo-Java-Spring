@@ -2,11 +2,9 @@ package startup;
 
 import java.security.Principal;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class CartController {
@@ -17,6 +15,12 @@ public class CartController {
         }
         return "cart";
     }
+	
+	@GetMapping("/editTest")
+	public String editTest() {
+		System.out.println("Cart :: 'Edit Cart' button clicked");
+		return "/cart";
+	}
 	
 //	@GetMapping("/")
 //	public void testPrint() {

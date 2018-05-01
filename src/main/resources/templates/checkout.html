@@ -6,9 +6,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 * {
@@ -112,12 +111,36 @@ span.price {
   }
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 </style>
 </head>
 <body>
 
-	<iframe src="./navbar.html" frameborder="0"></iframe>
-
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/shop">Shop</a></li>
+  <li><a href="/cart">Cart</a></li>
+  <li><a href="/login">Login</a></li>
+</ul>
 
 <center><h2>Checkout</h2></center>
 <p></p>

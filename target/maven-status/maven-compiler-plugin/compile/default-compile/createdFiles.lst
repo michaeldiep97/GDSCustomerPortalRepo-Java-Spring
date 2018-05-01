@@ -1,5 +1,10 @@
-startup/CartController.class
+startup/OrderConfirmationController.class
+startup/CheckoutController.class
 startup/HelloController.class
-startup/LoginController.class
 startup/Application.class
 startup/GreetingController.class
+startup/CartController.class
+startup/ProductPageController.class
+startup/LoginController.class
+startup/RegistrationFormController.class
+startup/ShopController.class

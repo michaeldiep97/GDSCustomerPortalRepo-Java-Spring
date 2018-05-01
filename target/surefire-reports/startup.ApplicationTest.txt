@@ -1,23 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: startup.ApplicationTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.328 s <<< FAILURE! - in startup.ApplicationTest
-homePage(startup.ApplicationTest)  Time elapsed: 0.246 s  <<< FAILURE!
-java.lang.AssertionError: 
-Response content
-Expected: a string containing "Login"
-     but: was "<!DOCTYPE HTML>
-<html>
-<head> 
-    <title>GDS - Home</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-    <iframe src="./navbar.html" frameborder="0"></iframe>
-    
-	<h1>This is the home page</h1>
-</body>
-</html>
-"
-	at startup.ApplicationTest.homePage(ApplicationTest.java:43)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.771 s - in startup.ApplicationTest

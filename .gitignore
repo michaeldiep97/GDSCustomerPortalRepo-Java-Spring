@@ -1,6 +1,10 @@
 *.DS_Store
 bin
 target
+createdFiles.lst
+inputFiles.lst
+startup.Application.txt
+TEST-startup.ApplicationTest.xml
 .classpath
 .project
 .settings

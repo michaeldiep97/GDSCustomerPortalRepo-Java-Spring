@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,6 +27,10 @@ public class Product {
         price = newPrice;
     }
 
+    public void setProductID(int newID) {
+        this.productID = newID;
+    }
+    
     public void setCategory(int newCategory) {
         category = newCategory;
     }
@@ -35,6 +39,7 @@ public class Product {
     public double getPrice() { return price; }
     public int getProductID() { return productID; }
     public int getCategory() { return category; }
+
     
     // Constructor with category provided    
     /*public Product (String name, double price, int productID, int category) {

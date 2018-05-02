@@ -16,4 +16,12 @@ public class ShopController {
 		return "shop";
 	}
 	
+	@GetMapping("?cereal1")
+	public void cereal1(Principal principal) {
+		if (principal != null) {
+			// return "redirect:/cereal1";
+		}
+		System.out.println("Cereal");
+	}
+	
 }

@@ -1,10 +1,157 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head> 
-    	<title>GDS - Shop</title> 
-    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	</head>
-	
-	<body>
-		<h2>Hello!</h2>
-	</body>
+<head> 
+    <title>GDS - Shop</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 600px;
+    padding: 16px;
+    background-color: white;
+    border: 3px solid #f1f1f1;
+}
+
+.productImage {
+	width: 400px;
+	padding: 16px;
+	float: left;
+}
+
+.productDetails {
+	width: 600px;
+	padding 16px;
+	margin-left: 400px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 562px;
+    opacity: 0.9;
+    font-size: 17px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/shop">Shop</a></li>
+  <li><a href="/cart">Cart</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/search">Search</a></li>
+</ul>
+
+<h2></h2>
+  <div class="container">
+    <h1>Product Page</h1>
+    <p></p>
+    <hr>
+    		<div class="productImage">
+    			<!-- <img src="images/img_cereal1.jpg" style="width:100%"> -->
+    			<img th:src="'images/img_' + ${image} + '.jpg'" style="width:100%">
+    		</div>
+    		<div class="productDetails">
+    			<!-- <h2>Honey Bunches Of Oats</h2> -->
+    			<h2 th:text="${name}" />
+    			<h2>Price: $3.00</h2>
+    			<!-- <h2 th:text="${price}" /> -->
+    			<p>
+					Select Quantity...
+					<select>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					</select>
+				</p>
+				
+				<!-- <a href="/addToCart?image=cereal1"> <input type="submit" class="registerbtn" value="Add To Cart"></a> -->
+				<a th:href="@{'/addToCart?image=' + ${image} + '&price1=$3.00'}"> <input type="submit" class="registerbtn" value="Add To Cart"></a>
+    		</div>
+    	<hr>
+    	
+    	<!-- <input type="submit" class="registerbtn" value="Add To Cart"> -->
+  </div>
+</body>
+</html>

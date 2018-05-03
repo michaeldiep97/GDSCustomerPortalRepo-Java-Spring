@@ -1,11 +1,46 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head> 
-    <title>GDS - Checkout</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
 body {font-family: Arial, Helvetica, sans-serif;margin: 0;}
 
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -106,27 +141,21 @@ li a:hover {
   <li><a href="/search">Search</a></li>
 </ul>
 
-<center><h2>Login Form</h2></center>
+<h2 style="text-align:center">User Profile Card</h2>
 
-<!-- <form style="max-width: 500px"> -->
-<form action="/loginAttempt">
-  <div class="container" style="border:3px solid #f1f1f1;margin: 0 auto">
-    <label for="user"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="user" required>
-
-    <label for="pass"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pass" required>
-        
-    <button type="submit">Login</button></a>
-  </div>
-</form>
-  <div class="container" style="background-color:#f1f1f1;margin: 0 auto; border:3px solid #f1f1f1">
-    <form action="/">
-    	<input type="submit" value="Cancel" class="cancelbtn" formnovalidate>
-    	<span class="psw"><a href="/registrationForm">Create Account</a></span>
-    </form>
-  </div>
-<!-- </form> -->
+<div class="card">
+  <img src="images/img_rowdy.jpg" alt="Rowdy" style="width:100%">
+  <h1>Rowdy R. Runner</h1>
+  <p class="title">Username: rowdy@utsa.edu</p>
+  <p>Account Home</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+ </div>
+ <a href="/login"><p><button>Logout</button></p></a>
+</div>
 
 </body>
 </html>

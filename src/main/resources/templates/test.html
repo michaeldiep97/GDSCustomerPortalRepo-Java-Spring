@@ -17,6 +17,7 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 1000px;
+	height: 600px;
     padding: 16px;
     background-color: white;
     border: 3px solid #f1f1f1;
@@ -31,6 +32,7 @@ body {
 .productDetails {
 	width: 600px;
 	padding 16px;
+	margin-left: 400px;
 }
 
 /* Full-width input fields */
@@ -62,7 +64,7 @@ hr {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 562px;
     opacity: 0.9;
     font-size: 17px;
 }
@@ -128,12 +130,23 @@ li a:hover {
     		<div class="productImage">
     			<img src="images/img_cereal1.jpg" style="width:100%">
     		</div>
-    		<div class="productDescription">
+    		<div class="productDetails">
     			<h2>Honey Bunches Of Oats</h2>
+    			<p>
+					Select Quantity...
+					<select>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					</select>
+				</p>
+				<h2>Test</h2>
+				<input type="submit" class="registerbtn" value="Add To Cart">
     		</div>
     	<hr>
-    	<p></p>
-    	<input type="submit" class="registerbtn" value="Add To Cart">
+    	
+    	<!-- <input type="submit" class="registerbtn" value="Add To Cart"> -->
     </form>
   </div>
 </body>

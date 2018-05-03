@@ -12,6 +12,7 @@ public class User {
     private Integer id;
     private String name;
     private String email;
+	private Order order;
     
 	public Integer getId() {
 		return id;
@@ -35,6 +36,14 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 
